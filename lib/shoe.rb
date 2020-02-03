@@ -3,11 +3,7 @@ class Shoe
   attr_reader :brand
   
   BRANDS = []
-  BRANDS.each do |brands_that_exists|
-    if brands_that_exist == @brand 
-    BRANDS.pop
-  end
-  end
+  
 
   def initialize(brand)
     @brand = brand
@@ -19,5 +15,10 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
+BRANDS.each do |brands_that_exists|
+    if brands_that_exist == @brand 
+    BRANDS.pop
+  end
+  end
 
 end
