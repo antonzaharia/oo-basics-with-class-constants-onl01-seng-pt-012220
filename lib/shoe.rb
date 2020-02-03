@@ -7,13 +7,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.map do |brands_that_exists|
-    if brands_that_exist == brand
-    puts "Brand already in use!"
-  else
     BRANDS << brand
-  end
-  end
   end
 
   def cobble
