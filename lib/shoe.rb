@@ -8,6 +8,9 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
+    if brand.in?(BRANDS)
+      BRANDS.pop
+    end
   end
 
   def cobble
