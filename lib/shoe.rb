@@ -9,7 +9,7 @@ class Shoe
     BRANDS << brand
     BRANDS.each do |brands_that_exists|
       if brands_that_exists == brand
-        brands_that_exists.delete
+        BRANDS.pop
       end
     end
   end
