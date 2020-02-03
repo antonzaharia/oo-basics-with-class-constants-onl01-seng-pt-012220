@@ -7,7 +7,13 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    BRANDS.each do |brands_that_exists|
+    if brands_that_exist == @brand 
+    puts "Brand already in use!"
+  else
     BRANDS << brand
+  end
+  end
   end
 
   def cobble
@@ -15,10 +21,6 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-BRANDS.each_with_index do |brands_that_exists, i|
-    if brands_that_exist == @brand 
-    BRANDS.delete_at(i)
-  end
-  end
+
 
 end
