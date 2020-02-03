@@ -8,8 +8,8 @@ class Shoe
     @brand = brand
     BRANDS << brand
     BRANDS.each do |brands_that_exists|
-      if brands_that_exists != brand
-        BRANDS << brand
+      if brands_that_exists == brand
+        brands_that_exists.delete
       end
     end
   end
