@@ -6,6 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    BRANDS << brand
     BRANDS.each do |brands_that_exists|
       if brands_that_exists != brand
         BRANDS << brand
