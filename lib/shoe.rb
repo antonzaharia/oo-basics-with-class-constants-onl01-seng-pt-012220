@@ -3,11 +3,15 @@ class Shoe
   attr_reader :brand
   
   BRANDS = []
+  BRANDS.each do |brands_that_exists|
+    if brands_that_exist == @brand 
+    BRANDS.pop
+  end
+  end
 
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    
   end
 
   def cobble
