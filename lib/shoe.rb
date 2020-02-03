@@ -15,9 +15,9 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-BRANDS.each do |brands_that_exists|
+BRANDS.each_with_index do |brands_that_exists, i|
     if brands_that_exist == @brand 
-    BRANDS.pop
+    BRANDS.delete_at(i)
   end
   end
 
